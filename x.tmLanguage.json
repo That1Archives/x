@@ -1,0 +1,32 @@
+{
+    "scopeName": "source.x",
+    "patterns": [
+      {
+        "match": "\\b(ADD|SUBTRACT|MULTIPLY|DIVIDE|VAR|GET|PRINT)\\b",
+        "name": "keyword"
+      },
+      {
+        "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b",
+        "name": "variable"
+      },
+      {
+        "match": "\\b[0-9]+\\b",
+        "name": "number"
+      }
+    ],
+    "repository": {
+      "keyword": {
+        "foreground": "#FF0000"
+      },
+      "variable": {
+        "foreground": "#0000FF"
+      },
+      "number": {
+        "foreground": "#00FF00"
+      }
+    },
+    "files.associations": {
+      "*.mylang": "mylang"
+    }
+  }
+  
